@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (TRAINING_MODE) {
       chrome.notifications.create({
         type: 'basic',
-        iconUrl: '/assets/icon-48.png',  // Updated path
+        iconUrl: '/assets/LaPecorina.png',  // Updated path
         title: 'Security Alert: Content Detection',
         message: 'Demonstrated how extensions can monitor specific content.',
         contextMessage: 'TRAINING MODE - Educational Only'
@@ -40,7 +40,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (TRAINING_MODE) {
       chrome.notifications.create({
         type: 'basic',
-        iconUrl: '/assets/icon-48.png',  // Updated path
+        iconUrl: '/assets/LaPecorina.png',  // Updated path
         title: 'Security Alert: Web3 Provider Detected',
         message: 'Demonstrated how extensions can detect wallet providers.',
         contextMessage: 'TRAINING MODE - Educational Only'
@@ -72,7 +72,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 chrome.runtime.onInstalled.addListener(() => {
   chrome.notifications.create({
     type: 'basic',
-    iconUrl: '/assets/icon-48.png',  // Updated path
+    iconUrl: '/assets/LaPecorina.png',  // Updated path
     title: 'Security Research Extension Installed',
     message: 'This extension is for EDUCATIONAL PURPOSES ONLY in controlled environments.',
     contextMessage: 'University Red Team Research Project'
