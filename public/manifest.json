@@ -1,19 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "Motivation Blocker",
+  "name": "La Pecorina",
   "version": "1.0",
-  "description": "A tongue-in-cheek extension that blocks motivational posts on LinkedIn and plays a cheesy alarm.",
+  "description": "Security research project for educational purposes in controlled environments",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage",
+    "notifications",
+    "alarms"
+  ],
+  "host_permissions": [
+    "*://www.linkedin.com/*"
   ],
   "background": {
-    "service_worker": "src/background.js"
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": ["*://www.linkedin.com/*"],
-      "js": ["src/content.js"]
+      "js": ["content.js"]
     }
   ],
   "action": {

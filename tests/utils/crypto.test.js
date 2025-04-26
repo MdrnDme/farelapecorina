@@ -1,3 +1,5 @@
-test('hello world!', () => {
-	expect(1 + 1).toBe(2);
+const { generateWalletAddress, encryptWalletKey, validateTransaction } = require('../../src/utils/crypto');
+
+describe('Crypto Utility Tests', () => {
+  // Test cases...
 });
