@@ -1,0 +1,42 @@
+{
+  "name": "motivation-blocker-extension",
+  "version": "1.0.0",
+  "description": "A tongue-in-cheek Chrome extension that blocks motivational posts on LinkedIn and plays an alarm.",
+  "main": "src/background.js",
+  "scripts": {
+    "build": "echo 'Building the extension...'",
+    "test": "echo 'Running tests...'",
+    "start": "echo 'Starting the extension...'"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications"
+  ],
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/*"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "public/popup.html",
+    "default_icon": {
+      "16": "public/assets/icon16.png",
+      "48": "public/assets/icon48.png",
+      "128": "public/assets/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "public/assets/icon16.png",
+    "48": "public/assets/icon48.png",
+    "128": "public/assets/icon128.png"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
