@@ -1,7 +1,7 @@
 # La Pecorina - Security Research Project
 
 <div align="center">
-  <img src="public/assets/LaPecorina.png" alt="La Pecorina Logo" width="150">
+  <img src="public/assets/LaPecorina.png" alt="La Pecorina Logo" width="300">
 </div>
 
 ![Security Research](https://img.shields.io/badge/Purpose-Security%20Research-red)
