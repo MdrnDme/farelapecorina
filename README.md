@@ -7,7 +7,11 @@
 
 ## So, You Trust Your Browser Extensions?
 
-This research project demonstrates why you probably shouldn't. La Pecorina shows how easily that "motivational quotes" extension could actually be pilfering your crypto wallet while you're busy "hustling" and "grinding."
+What if someone got tired of seeing motivational quotes online? What if they created a seemingly innocent extension that actually pilfered your crypto wallet every time you pressed "like" on a post? This research project demonstrates exactly how that could happen.
+
+La Pecorina shows how easily a browser extension disguised as something harmless (like a "motivational quotes" blocker) could actually be silently draining your crypto wallet while you're busy scrolling through posts about "hustling" and "grinding." One click to "like" that inspirational post could trigger a transaction you never authorized.
+
+This educational demonstration reveals the concerning ease with which trusted browser extensions can access sensitive data, manipulate web3 providers, and execute operations without obvious user consent.
 
 ## ⚠️ IMPORTANT DISCLAIMER
 
